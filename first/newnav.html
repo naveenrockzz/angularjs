@@ -1,0 +1,43 @@
+<!DOCTYPE html
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+<style>
+    #kk {
+        display: none;
+    }
+    </style>
+cg
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $('li').css("color","blue");
+                $('li').slideUp(1000);
+                $('li').slideDown(10000);
+                $("li").attr("title","MYTITLE");
+
+                $("#kk").fadeIn(10000);
+                $("#mm").fadeOut(10000);
+                $("#num").load("https://api.github.com/users");
+                $('ul').wrap('<ol id="ko"></ol>');
+
+
+
+            })
+    </script>
+</head>
+<body>
+<h1> Assignment 3</h1>
+<ul>
+    <li>India</li>
+    <li>US</li>
+    <li>Japan</li>
+</ul>
+<div id="res">
+    <img src="cricket.jpg" id="kk">
+    <img src="shivaya.jpg" id="mm">
+
+</div>
+<div id="num">
+</div>
+</body>
+</html>
