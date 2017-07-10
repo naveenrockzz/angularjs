@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class</title>
+    <style>
+        .Color {
+            color: blue;
+        }
+        .italica {
+            font-family: Arial;
+        }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#color').click(function(){
+                $('p').addClass('Color');
+            })
+            $('#both').click(function(){
+                $('p').addClass('Color italica')
+            })
+            $('#italics').click(function(){
+                $('p').removeClass('Color italica')
+            })
+        })
+    </script>
+</head>
+<body>
+<p>Om Namah Shivaya</p>
+<table>
+    <tr>
+    <td><button id="color">add color</button></td>
+    <td><button id="italics">add italics</button></td>
+    <td><button id="both">add italics and color</button></td>
+</tr>
+<tr>
+    <td><button id="remove1">remove color</button></td>
+    <td><button id="remove2">remove italics</button></td>
+    <td><button id="remove3">remove color and italics</button></td>
+
+</tr>
+</table>
+
+</body>
+</html>
